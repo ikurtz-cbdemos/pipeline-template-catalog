@@ -3,9 +3,9 @@ def testPodYaml = libraryResource 'podtemplates/vuejs/vuejs-test-pod.yml'
 pipeline {
   agent none
   options { 
-    buildDiscarder(logRotator(numToKeepStr: '10'))
+    buildDiscarder(logRotator(numToKeepStr: '15'))
     skipDefaultCheckout true
-    preserveStashes(buildCount: 10)
+    preserveStashes(buildCount: 15)
   }
   environment {
     repoOwner = "${repoOwner}"
