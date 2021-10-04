@@ -1,0 +1,12 @@
+[
+  {
+    "scm":{ 
+      "$class":"GitHubSCMSource",
+      "credentialsId":"cloudbees-ci-workshop-github-app",
+      "repoOwner":"ikurtz-c3-ai-ci-workshop",
+      "repository":"pipeline-template-catalog"
+    },
+    "branchOrTag":"main",
+    "updateInterval":"15m"
+  }
+]
